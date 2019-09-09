@@ -12,6 +12,7 @@ class MyApp extends StatelessWidget {
           backgroundColor: Colors.teal,
           body: SafeArea(
             child: Column(
+              crossAxisAlignment: CrossAxisAlignment.center,
               children: <Widget>[
                 CircleAvatar(
                   backgroundImage: NetworkImage(
@@ -22,11 +23,31 @@ class MyApp extends StatelessWidget {
                   'Tifla Lephenix',
                   style: TextStyle(
                     color: Colors.white,
-                    fontSize: 20.0,
-                    fontWeight: FontWeight.bold
+                    fontSize: 40.0,
+                    fontWeight: FontWeight.bold,
+                    fontFamily: 'Pacifico'
                   ),
-                  
+                ),
+                Text(
+                  'Software Developper',
+                  style: TextStyle(
+                    color: Colors.white,
+                    fontSize: 20.0,
+                    fontWeight: FontWeight.w700,
+                    letterSpacing: 2.5
+                  ),
+                ),
+                Container(
+                  child: Row(
+                    children: <Widget>[
+                      Icon(
+                        Icons.phone,
+                        color: Colors.white,
+                      )
+                    ],
+                  ),
                 )
+
               ],
             ),
           )),
