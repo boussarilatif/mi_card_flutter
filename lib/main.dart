@@ -12,7 +12,7 @@ class MyApp extends StatelessWidget {
           backgroundColor: Colors.teal,
           body: SafeArea(
             child: Column(
-              crossAxisAlignment: CrossAxisAlignment.center,
+              // crossAxisAlignment: CrossAxisAlignment.center,
               mainAxisAlignment: MainAxisAlignment.center,
               children: <Widget>[
                 CircleAvatar(
@@ -38,11 +38,15 @@ class MyApp extends StatelessWidget {
                     letterSpacing: 2.5
                   ),
                 ),
-                SizedBox(height: 10.0,),
+                SizedBox(
+                  height: 15.0,
+                  width: 150.0,
+                  child: Divider(
+                    color: Colors.white,
+                  ),
+                ),
                 Card(
                   margin: EdgeInsets.symmetric(vertical: 10.0,horizontal: 25.0),
-                  // padding: EdgeInsets.all(10.0),
-                  color: Colors.white,
                   child: ListTile(
                     leading: Icon(
                       Icons.phone,
@@ -59,9 +63,10 @@ class MyApp extends StatelessWidget {
                 ),
                 Card(
                   margin: EdgeInsets.symmetric(vertical: 10.0,horizontal: 25.0),
-                  // padding: EdgeInsets.all(10.0),
-                  color: Colors.white,
                   child: ListTile(
+                    onTap: ()=>{
+                      print('hello world')
+                    },
                     leading: Icon(
                       Icons.email,
                       color: Colors.teal.shade900,
