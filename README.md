@@ -1,4 +1,4 @@
-# i_am_rich
+# Profil card
 
 A new Flutter project.
 
